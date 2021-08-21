@@ -43,6 +43,6 @@ App，可以在iOS模拟器或者iOS真机上运行。通过预览端App，用�
 
 
 == 注
-目前Sketch2Code还只是个人内部使用。
+目前Sketch2Code还未对外发布，只是个人内部使用。
 
 
