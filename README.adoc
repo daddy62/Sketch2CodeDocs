@@ -41,6 +41,18 @@ App，可以在iOS模拟器或者iOS真机上运行。通过预览端App，用�
 
 可以通过几个视频来对S2C的效果有一个直观的了解。链接：[https://github.com/lianxianghui/Sketch2CodeDocs/blob/main/VideoIntroduction.adoc]
 
+== 对所生成代码的说明
+
+S2C所生成的不只是代码，还包括了设置过导出标志的图片。具体的说，目前iOS会按着纯代码的方式生成Objective-C代码与所有需要导出的图片（2x和3x)。Android会生成java文件，和drawable、layout、menu这些资源文件，会直接修改strings.xml和AndroidManifest.xml。
+
+S2C所生成的代码是“所见即所得”的，这里的“所见即所得”是指与预览端的预览效果一致。所生成的代码不需要做修改直接运行，就是预览端看到的效果（Android可能需要修改一下AndroidManifest.xml和themes)。
+
+目前生成目标包括iOS-Objc-MVVM，iOS-Objc-MVC和Android-Java-MVC。未来有计划加入对iOS下Swift语言的支持。
+
+目前所生成的iOS MVVM架构的代码只是从职责分配的角度使用MVVM，没有与ReactiveCocoa这类函数响应式框架相关。我的一个开源项目
+https://github.com/lianxianghui/BasicBitcoinWallet-iOS[BasicBitcoinWallet-iOS]
+使用的就是这种MVVM架构。以下链接有对这种MVVM架构更详细的说明： https://github.com/lianxianghui/BasicBitcoinWalletDocs/blob/master/CodeDescription.adoc#对架构的选择[BasicBitcoinWallet-iOS代码说明]。
+
 
 == 注
 目前Sketch2Code还未对外发布，只是个人内部使用。
