@@ -45,7 +45,7 @@ App，可以在iOS模拟器或者iOS真机上运行。通过预览端App，用�
 
 请参考 https://github.com/lianxianghui/Sketch2CodeDocs/blob/main/CodeDescription.adoc[对所生成代码的说明]
 
-=== 对布局功能的说明
+== 对布局功能的说明
 请参考 https://github.com/lianxianghui/Sketch2CodeDocs/blob/main/LayoutIntroduction.adoc[对布局功能的说明]
 
 == 注
